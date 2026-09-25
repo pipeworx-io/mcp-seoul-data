@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-seoul-data",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Seoul Open Data MCP — city data for Seoul via the Seoul Open Data Plaza API",
   "type": "module",
   "main": "src/index.ts",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-854747b5494fea9781411222a75723abb73813948bd1f8ce3db4e081c3e3d29b",
+    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
   }
 }
