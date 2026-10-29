@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-seoul-data",
-  "version": "0.1.3",
-  "description": "Seoul Open Data MCP — city data for Seoul via the Seoul Open Data Plaza API",
+  "version": "0.2.0",
+  "description": "Seoul Open Data MCP — city data for Seoul via the Seoul Open Data Plaza API (openapi.seoul.go.kr). Real estate transactions, air quality, cultural events, and a generic passthrough for any of the portal's ~1000 datasets.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-seoul-data": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "seoul-data"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-seoul-data.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/seoul-data",
   "pipeworx": {
-    "sourceHash": "v1-98c750cd433780ebb258ba8e15ae35c63263b9dfc67a21495886766394c01423",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "seoul-data",
+    "gatewaySlug": "seoul-data",
+    "sourceHash": "v1-bd03af4b442c40d5567fe837f2429aa24b3a50e69981bdf570f97b76fdb4bb34",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
