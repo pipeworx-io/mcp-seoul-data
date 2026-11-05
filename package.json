@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-seoul-data",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Seoul Open Data MCP — city data for Seoul via the Seoul Open Data Plaza API (openapi.seoul.go.kr). Real estate transactions, air quality, cultural events, and a generic passthrough for any of the portal's ~1000 datasets.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "seoul-data",
     "gatewaySlug": "seoul-data",
-    "sourceHash": "v1-bd03af4b442c40d5567fe837f2429aa24b3a50e69981bdf570f97b76fdb4bb34",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-b9f6640249777046e02e86c174a37caa9b7187c177714be2d08cd9b9f3ca1314",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
